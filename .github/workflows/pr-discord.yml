@@ -54,11 +54,11 @@ jobs:
                   inline : true
                   },
                   {name: `<---`,
-                  value:' ',
+                  value: ` `,
                   inline : true
                   },
                   {name: `Compare`,
-                  value: `[${pr.head.ref}](${pr.head.repo.html_url}),
+                  value: `[${pr.head.ref}](${pr.head.repo.html_url})`,
                   inline : true
                   }
                 ],
