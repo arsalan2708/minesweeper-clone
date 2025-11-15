@@ -62,7 +62,7 @@ jobs:
                   url: pr.head.repo.url,
                   inline : true
                   }
-                ]
+                ],
                 timestamp: new Date().toISOString()
               }]
             };
