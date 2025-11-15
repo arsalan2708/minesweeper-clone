@@ -67,8 +67,10 @@ jobs:
               }]
             };
 
-            await fetch(webhook, {
+            const res = await fetch(webhook, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(body)
             });
+
+            console.log(res.status)
