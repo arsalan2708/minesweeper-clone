@@ -11,7 +11,7 @@ jobs:
       - name: Send to Discord
         uses: actions/github-script@v7
         env:
-          WEBHOOK_URL: "https://discord.com/api/webhooks/1439144660122734655/FJVXtvHvvdfPYA5EzjlwUzxRIe1das_-3-YSlEoy0IcN20Z4Em7T-6UbCxX96ifzW0Oe"
+          WEBHOOK_URL: "https://discord.com/api/webhooks/1439144660122734655/FJVXtvHvvdfPYA5EzjlwUzxRIe1das_-3-YSlEoy0IcN20Z4Em7T-6UbCxX96ifzW0Oe/github"
         with:
           script: |
             const webhook = process.env.WEBHOOK_URL;
