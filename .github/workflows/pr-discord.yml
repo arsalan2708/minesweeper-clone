@@ -17,7 +17,7 @@ jobs:
             const webhook = process.env.WEBHOOK_URL;
             const action = context.payload.action;
             const pr = context.payload.pull_request;
-            const user = pr.user;
+            let user = pr.user;
             const url = pr.html_url;
             const merged = pr.merged;
 
@@ -32,6 +32,7 @@ jobs:
               color = 10181046; // Purple
             } else if (action === 'closed' && merged) {
               msg = `PR Merged!`;
+              user = pr.merged_by
               color = 5763719; // Green
             } else if (action === 'closed') {
               msg = `PR Closed (not merged)`;
